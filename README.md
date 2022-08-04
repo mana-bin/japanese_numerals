@@ -1,8 +1,7 @@
-# JapaneseNumerals
+# Japanese Numerals
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/japanese_numerals`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Expansion of Integer.
+It converts integer to Japanese Numerals
 
 ## Installation
 
@@ -16,7 +15,19 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+
+123000000.to_japanese_unit_ary -> [["1", "億"], ["2300", "万"]]
+
+123000000.to_japanese_unit -> "1億2300万"
+
+
+```
+
+
+to_j_unit     is alias of to_japanese_unit
+to_j_unit_ary is alias of to_japanese_unit_ary
+
 
 ## Development
 
@@ -26,7 +37,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/japanese_numerals.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mana-bin/japanese_numerals.
 
 ## License
 
